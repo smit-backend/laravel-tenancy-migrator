@@ -1,0 +1,27 @@
+{
+    "name": "smit-backend/laravel-tenancy-migrator",
+    "description": "Automate custom artisan migrations across isolated tenant databases smoothly without connection drops.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "smit-backend",
+            "homepage": "https://github.com/smit-backend"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SmitBackend\\TenancyShift\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SmitBackend\\TenancyShift\\PackageServiceProvider"
+            ]
+        }
+    }
+}
