@@ -4,20 +4,17 @@ declare(strict_types=1);
 
 namespace SmitBackend\TenancyShift;
 
-/**
- * TenancyShift: Multi-Tenant DB Migrator Service Provider
- *
- * @author smit-backend
- */
+use SmitBackend\TenancyShift\Contracts\TenantConnectionInterface;
+
 class PackageServiceProvider
 {
     public function register(): void
     {
-        // Register configuration and core bindings
+        // Bind core service singleton
     }
 
     public function boot(): void
     {
-        // Boot service routes, views, or commands
+        // Boot routes and configuration publishing
     }
 }
